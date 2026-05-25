@@ -39,7 +39,7 @@ export default function Hero() {
           <p className="mt-5 max-w-2xl text-base text-slate-700 dark:text-slate-300 md:text-lg">{profile.tagline}</p>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <a className="btn-primary" href="H:\Portfolio Website\public\moazzam-hameed.pdf" download>
+              <a className="btn-primary" href="/moazzam-hameed.pdf" download>
               <ArrowDownToLine size={17} />
               Download CV
             </a>
