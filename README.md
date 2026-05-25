@@ -64,10 +64,4 @@ public/
 
 ## Deployment
 
-Ready for deployment on platforms like Vercel, Netlify, or GitHub Pages (with suitable Vite base configuration when needed).
-
-## Customization Notes
-
-- Replace placeholder links (GitHub, LinkedIn, demo URLs) in src/data/portfolioData.js.
-- Replace public/resume-moazzam-hameed.pdf with your actual resume.
-- Add your profile image in the About section.
+Deployed  on platforms like Vercel Youcan check through this link ().
