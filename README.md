@@ -64,4 +64,4 @@ public/
 
 ## Deployment
 
-Deployed  on platforms like Vercel Youcan check through this link ().
+Deployed  on platforms like Vercel You can check through this link (abc).
