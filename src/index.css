@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-heading: "Sora", sans-serif;
+  --font-body: "Manrope", sans-serif;
+
+  --color-brand-50: #eef8ff;
+  --color-brand-300: #80ccff;
+  --color-brand-400: #4db5fd;
+  --color-brand-500: #1f9af4;
+  --color-brand-600: #0f7acc;
+  --color-brand-700: #1060a0;
+  --color-shell-50: #f9fbfc;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background:
+    radial-gradient(circle at 8% 12%, #dbf4ff 0%, transparent 44%),
+    radial-gradient(circle at 88% 20%, #d3f1ef 0%, transparent 38%),
+    linear-gradient(145deg, #f8fafc 0%, #f3f6fb 35%, #eef4ff 100%);
+}
+
+.dark body {
+  background:
+    radial-gradient(circle at 10% 10%, #265d8442 0%, transparent 35%),
+    radial-gradient(circle at 85% 20%, #3c5f533d 0%, transparent 34%),
+    linear-gradient(140deg, #0a1018 0%, #0d1420 50%, #0e1726 100%);
+}
+
+#root {
+  min-height: 100svh;
+}
+
+.page-noise {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.08;
+  background-image: radial-gradient(circle at 1px 1px, #5f5f5f 1px, transparent 0);
+  background-size: 28px 28px;
+}
+
+.section-shell {
+  position: relative;
+  z-index: 1;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.hero-glow {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 22% 45%, #209af440, transparent 34%),
+    radial-gradient(circle at 75% 58%, #0ea5e92b, transparent 37%);
+}
+
+.glass-card {
+  border: 1px solid #d6dee7;
+  border-radius: 1.25rem;
+  background: linear-gradient(165deg, #fffc, #f8fbffa8);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 15px 45px #132a3f14;
+}
+
+.dark .glass-card {
+  border-color: #7d92a959;
+  background: linear-gradient(155deg, #08111edb, #101e309e);
+  box-shadow: 0 22px 42px #02060e57;
+}
+
+.section-eyebrow {
+  margin-bottom: 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.17em;
+  text-transform: uppercase;
+  color: #0f7acc;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3vw, 2.7rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: #0f172a;
+}
+
+.dark .section-title {
+  color: #e2e8f0;
+}
+
+.section-subtitle {
+  margin-top: 0.75rem;
+  line-height: 1.65;
+  color: #475569;
+}
+
+.dark .section-subtitle {
+  color: #94a3b8;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.72rem 1.1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  background: linear-gradient(130deg, #0f7acc, #1f9af4);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px #0f7acc4d;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #50729259;
+  border-radius: 9999px;
+  padding: 0.68rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1f2937;
+  text-decoration: none;
+  background: #ffffffb8;
+  transition: all 0.25s;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  color: #0f7acc;
+  border-color: #1f9af499;
+}
+
+.dark .btn-secondary {
+  color: #dbeafe;
+  background: #08111fa6;
+  border-color: #7b9aba66;
+}
+
+.dark .btn-secondary:hover {
+  color: #80ccff;
+  border-color: #4db5fde6;
+}
+
+@media (width <= 768px) {
+  .section-shell {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
