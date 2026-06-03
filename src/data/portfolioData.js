@@ -25,7 +25,7 @@ export const navItems = [
 
 export const about = {
   summary:
-    'I am a Full Stack Engineer and Software Engineering student who loves turning complex business requirements into elegant digital products. My core work centers around ASP.NET Core Web APIs, C#, React.js, and relational databases. I enjoy designing scalable backend architectures, building modern user experiences, and exploring entrepreneurship through SaaS product thinking.',
+    'I am a Full Stack Engineer who loves turning complex business requirements into elegant digital products. My core work centers around ASP.NET Core Web APIs, C#, React.js, and relational databases. I enjoy designing scalable backend architectures, building modern user experiences, and exploring entrepreneurship through SaaS product thinking.',
   bullets: [
     'Hands-on experience delivering SaaS-based ERP modules for real-world workflows.',
     'Strong focus on API security, JWT authentication, and maintainable code structure.',
