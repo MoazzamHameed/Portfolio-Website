@@ -58,8 +58,10 @@ export const skillGroups = [
     title: 'Database Skills',
     items: [
       { name: 'SQL Server', value: 89 },
+      {name : 'Stored Procedures', value: 82},
       { name: 'Oracle Database', value: 84 },
       { name: 'PL/SQL', value: 80 },
+      
     ],
   },
   {
