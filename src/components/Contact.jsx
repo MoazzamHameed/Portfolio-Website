@@ -21,7 +21,7 @@ export default function Contact() {
 
   const onSubmit = (event) => {
     event.preventDefault()
-    alert('Thanks for reaching out! This demo form is ready to connect with your backend or Formspree.')
+    alert('Thanks for reaching out! I will get back to you soon.')
     setFormState(initialState)
   }
 
@@ -73,7 +73,7 @@ export default function Contact() {
                   value={formState.name}
                   onChange={onChange}
                   className="w-full rounded-xl border border-slate-300 bg-white/85 px-4 py-3 text-sm outline-none ring-brand-400 transition focus:ring dark:border-slate-700 dark:bg-slate-900/70"
-                  placeholder="Moazzam Hameed"
+                  placeholder="Your Name"
                 />
               </label>
 
